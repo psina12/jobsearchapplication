@@ -1,0 +1,14 @@
+<H1> {{job.title}}</H1>
+salary:{{job.salary | currency:'USD'}} <br/>
+Description:{{job.description}} <br/>
+Experience:{{job.experience}} <br/>
+Skills:{{job.skills}} <br/>
+postDate:{{job.postDate | date: 'MMM dd, YYYY'}} <br/>
+postDate:{{job.location}} <br/>
+
+<!-- <div *ngIf = "job.location"> location <br/>
+  Country:{{job.location.country}}
+  State:{{job.location.state}}
+</div> -->
+
+<app-delete [jobId]="job._id"></app-delete>

@@ -1,0 +1,8 @@
+
+<ul>
+    <li *ngFor = "let job of jobs">
+        <a>  
+            <a routerLink="/jobs/{{job._id}}"> {{job.title}}</a>
+        </a>
+   </li>
+</ul>
